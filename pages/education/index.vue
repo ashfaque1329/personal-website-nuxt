@@ -1,7 +1,7 @@
 <template>
   <div class="page-container">
     <h1 class="page-title">
-      <i class="fas fa-graduation-cap"></i> Education & Thesis
+      <i class="fas fa-graduation-cap"></i> Education
     </h1>
     <p class="page-subtitle">Academic journey and research</p>
 

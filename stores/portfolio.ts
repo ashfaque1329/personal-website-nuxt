@@ -20,6 +20,7 @@ export const usePortfolioStore = defineStore('portfolio', {
     getters: {
         name: (state) => state.profile?.name || '',
         title: (state) => state.profile?.title || '',
+        graduation: (state) => state.profile?.graduation || '',
         location: (state) => state.profile?.location || '',
         linkedin: (state) => state.profile?.linkedin || '',
         github: (state) => state.profile?.github || '',

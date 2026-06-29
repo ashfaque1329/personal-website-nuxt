@@ -7,6 +7,7 @@
       <div class="hero-content">
         <h1 class="hero-name">{{ store.name }}</h1>
         <p class="hero-title">{{ store.title }}</p>
+        <p class="hero-graduation">{{ store.graduation }}</p>
         <div class="hero-contact">
           <span><i class="fas fa-map-pin"></i> {{ store.location }}</span>
           <span><i class="fas fa-envelope"></i> ashfaque1329@gmail.com</span>
@@ -219,6 +220,15 @@ useSEO({
   margin-top: 0.2rem;
   -webkit-text-fill-color: #1a5c5a;
 }
+
+.hero-graduation {
+  font-size: 1.0rem;
+  color: #1a5c5a;
+  font-weight: 500;
+  margin-top: 0.4rem;
+  -webkit-text-fill-color: #1a5c5a;
+}
+
 
 .hero-contact {
   display: flex;

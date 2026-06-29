@@ -1,0 +1,37 @@
+[
+  {
+    "name": "AI SaaS Platform",
+    "description": "A full-stack AI-powered SaaS platform built with Next.js, Prisma, Pinecone vector database, and LangChain. The platform provides RAG (Retrieval-Augmented Generation) capabilities for intelligent document processing and conversational AI interfaces.",
+    "tech": ["Next.js", "Prisma", "Pinecone", "LangChain", "TypeScript"]
+  },
+  {
+    "name": "Obstacle Assault (3D Game)",
+    "description": "An immersive 3D obstacle course game developed using Unreal Engine 5 with C++23. Features realistic physics, dynamic obstacles, and progressive difficulty levels.",
+    "tech": ["Unreal Engine 5", "C++23", "Blueprints"]
+  },
+  {
+    "name": "Yobird & Treehouse Games",
+    "description": "Two retro-style 2D games developed in Rust using the bracket-lib library. Showcases game development capabilities in systems programming language with focus on performance and memory safety.",
+    "tech": ["Rust", "bracket-lib", "Game Development"]
+  },
+  {
+    "name": "OpenStreetMap Route Planner",
+    "description": "A route planning application built with C++23 that leverages OpenStreetMap data to calculate optimal paths between locations using graph algorithms.",
+    "tech": ["C++23", "OpenStreetMap API", "Graph Algorithms"]
+  },
+  {
+    "name": "System Monitor",
+    "description": "A cross-platform system monitoring tool developed in C++23 that provides real-time insights into CPU, memory, disk, and network usage with an intuitive dashboard interface.",
+    "tech": ["C++23", "System APIs", "Data Visualization"]
+  },
+  {
+    "name": "Housing Application",
+    "description": "A full-stack housing management application using React.js for the frontend, Node.js for the backend, and Google Firestore Database for real-time data synchronization.",
+    "tech": ["React.js", "Node.js", "Firestore", "Firebase"]
+  },
+  {
+    "name": "React Native Quizzing App",
+    "description": "A cross-platform quiz application built with React Native for both Android and iOS platforms. Features user authentication, real-time scoring, and multiple quiz categories.",
+    "tech": ["React Native", "Android", "iOS", "Mobile Development"]
+  }
+]

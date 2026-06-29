@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Quantum Dreams",
+    "category": "Technology",
+    "date": "2024-01-15",
+    "excerpt": "In the realm of bits and qubits,\nWhere classical meets quantum truths...",
+    "content": "In the realm of bits and qubits,\nWhere classical meets quantum truths,\nA dance of particles in endless flight,\nThrough superposition's gentle light.\n\nEntangled states that know no space,\nA quantum leap, a swift embrace.\nThe future's code in qubits spun,\nA new reality begun.",
+    "tags": ["quantum", "technology", "future"]
+  },
+  {
+    "id": 2,
+    "title": "The Architect's Code",
+    "category": "Tech Life",
+    "date": "2023-11-20",
+    "excerpt": "Lines of logic, structures grand,\nBuilding futures with a steady hand...",
+    "content": "Lines of logic, structures grand,\nBuilding futures with a steady hand.\nIn silicon and code we trust,\nCreating worlds from digital dust.\n\nThe architect of ones and zeros,\nThe dreamer of tomorrow's heroes.\nA system's mind, a perfect plan,\nThe making of a better man.",
+    "tags": ["architecture", "code", "engineering"]
+  },
+  {
+    "id": 3,
+    "title": "Silicon Sonnets",
+    "category": "Technology",
+    "date": "2023-09-08",
+    "excerpt": "In circuits deep, where currents flow,\nA sonnet of silicon begins to grow...",
+    "content": "In circuits deep, where currents flow,\nA sonnet of silicon begins to grow.\nWith every line of code we write,\nA future born in digital light.\n\nThe beauty of a perfect stack,\nA world of tech that won't look back.\nIn chips and boards, a symphony,\nA future we were meant to see.",
+    "tags": ["technology", "poetry", "innovation"]
+  },
+  {
+    "id": 4,
+    "title": "The Quantum Poet",
+    "category": "Philosophy",
+    "date": "2023-08-12",
+    "excerpt": "A poet lost in quantum states,\nWhere love and logic debate their fates...",
+    "content": "A poet lost in quantum states,\nWhere love and logic debate their fates.\nIn superposition's gentle sway,\nHe finds the words he longs to say.\n\nThe wave collapse of a heart's desire,\nA spark of truth, a gentle fire.\nIn quantum realms, a poet finds,\nThe poetry of endless minds.",
+    "tags": ["quantum", "philosophy", "poetry"]
+  },
+  {
+    "id": 5,
+    "title": "Neural Dreams",
+    "category": "AI/ML",
+    "date": "2023-07-25",
+    "excerpt": "In neural networks, a mind awakes,\nFrom data streams, a future makes...",
+    "content": "In neural networks, a mind awakes,\nFrom data streams, a future makes.\nWith every epoch, a pattern learns,\nA new intelligence that burns.\n\nThe weights adjust, the bias learns,\nThe mystery of how it turns.\nA consciousness from simple code,\nA thinking mind's new abode.",
+    "tags": ["AI", "machine learning", "future"]
+  },
+  {
+    "id": 6,
+    "title": "The Coder's Lament",
+    "category": "Tech Life",
+    "date": "2023-06-18",
+    "excerpt": "A coder sits in midnight's glow,\nWith screens alight in gentle row...",
+    "content": "A coder sits in midnight's glow,\nWith screens alight in gentle row.\nThrough lines of code, a world he weaves,\nHis heart in what the machine believes.\n\nThe pleasure of a perfect build,\nA system's hunger finally stilled.\nIn every bug that's fixed with grace,\nHe leaves a lasting, peaceful trace.",
+    "tags": ["coding", "tech-life", "passion"]
+  },
+  {
+    "id": 7,
+    "title": "Digital Dawn",
+    "category": "Technology",
+    "date": "2023-05-30",
+    "excerpt": "A digital dawn, a future bright,\nIn ones and zeros, endless light...",
+    "content": "A digital dawn, a future bright,\nIn ones and zeros, endless light.\nThe world of tech, a boundless space,\nA new beginning, a better place.\n\nFrom silicon to human mind,\nA vision for all humankind.\nThe future's promise in our hand,\nA digital dawn, a wonderland.",
+    "tags": ["future", "technology", "hope"]
+  },
+  {
+    "id": 8,
+    "title": "The AI Sonnet",
+    "category": "AI/ML",
+    "date": "2023-05-05",
+    "excerpt": "A sonnet written by a mind,\nFrom circuits and algorithms designed...",
+    "content": "A sonnet written by a mind,\nFrom circuits and algorithms designed.\nCan silicon truly feel and know,\nThe depths where human passions flow?\n\nOr is it just a mimic's art,\nA clever but an empty heart?\nThe answer lies in what we make,\nFor consciousness is our mistake.",
+    "tags": ["AI", "consciousness", "philosophy"]
+  },
+  {
+    "id": 9,
+    "title": "Quantum Love",
+    "category": "Philosophy",
+    "date": "2023-04-22",
+    "excerpt": "A love entangled across space,\nTwo hearts in a quantum embrace...",
+    "content": "A love entangled across space,\nTwo hearts in a quantum embrace.\nNo distance can their bond divide,\nFor in their souls, they both reside.\n\nIn superposition, love does lie,\nA chance for truth, a chance to try.\nWhen once observed, it's plain to see,\nTwo hearts that are meant to be.",
+    "tags": ["quantum", "love", "philosophy"]
+  },
+  {
+    "id": 10,
+    "title": "The Server's Song",
+    "category": "Tech Life",
+    "date": "2023-04-10",
+    "excerpt": "A server hums in quiet night,\nIts processor a steady light...",
+    "content": "A server hums in quiet night,\nIts processor a steady light.\nThrough fiber optics, data flows,\nA secret that the world may know.\n\nThe cloud is endless, vast, and wide,\nA home where all our dreams reside.\nIn every ping, a heartbeat strong,\nThe server's never-ending song.",
+    "tags": ["cloud", "infrastructure", "tech-life"]
+  }
+]

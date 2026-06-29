@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Experiential Quantum Immersion Program",
+    "issuer": "Ingenii",
+    "date": "2026-01",
+    "url": "https://credserve.com/credentials/90f7e588-fda2-4dbb-821d-1a3d1182e228"
+  },
+  {
+    "name": "The Complete Quantum Computing Course for Beginners",
+    "issuer": "Coursera",
+    "date": "2025-10",
+    "url": "https://www.coursera.org/account/accomplishments/specialization/IQJIPXKZU5ZN"
+  },
+  {
+    "name": "C++ Nanodegree",
+    "issuer": "Udacity",
+    "date": "2023-08",
+    "url": "https://graduation.udacity.com/confirm/e/15ab9da6-fba4-11ea-bed8-0f668f2e70a7"
+  },
+  {
+    "name": "Machine Learning Specialization",
+    "issuer": "Coursera",
+    "date": "2023-01",
+    "url": "https://www.coursera.org/account/accomplishments/specialization/KFMZTWH5UE7A"
+  },
+  {
+    "name": "C++ Programming for Unreal Game Development",
+    "issuer": "Coursera",
+    "date": "2023-01",
+    "url": "https://www.coursera.org/account/accomplishments/specialization/5YN298HS48DG"
+  },
+  {
+    "name": "IOT Foundations Nanodegree Program",
+    "issuer": "Udacity",
+    "date": "2019-05",
+    "url": "https://graduation.udacity.com/confirm/72EMR5SJ"
+  },
+  {
+    "name": "React Nanodegree Program",
+    "issuer": "Udacity",
+    "date": "2018-04",
+    "url": "https://graduation.udacity.com/confirm/CJMHTMML"
+  }
+]

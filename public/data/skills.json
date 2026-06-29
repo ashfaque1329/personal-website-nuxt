@@ -1,0 +1,20 @@
+[
+  "AI, Deep Learning, Machine Learning, Generative AI",
+  "RAG, Multi AI Agents (CrewAI, Autogen)",
+  "Quantum Machine Learning, Qiskit, PennyLane",
+  "Web Application Frontend: ReactJS, JQuery, Svelte, NextJS, Apollo GraphQL",
+  "Web Application Backend: FastAPI, Django, Flask, Node.js, Laravel, GraphQL",
+  "SQL Databases: MariaDB, MySQL, Oracle, MS SQL, Google BigQuery, Snowflake, PostgreSQL, Amazon Redshift",
+  "NoSQL Databases: MongoDB, Cassandra DB, Scylla DB, Redis, Aerospike, Neo4J",
+  "Vector Databases: Weaviate, ChromaDB",
+  "C, Modern C++, Rust, 6502 Assembly Programming",
+  "Real Time Data Processing: Apache Storm, Apache Kafka, Apache Spark",
+  "ETL Tools: Apache Airflow/Google Cloud Composer, Pentaho Data Integration, Informatica, ODI",
+  "BI Tools: Apache Superset, Tableau, Google Data Studio",
+  "Mobile Application Development: React Native, Android Kotlin/Java, iOS Swift",
+  "DevOps: Docker, Kubernetes, JenkinsCI, TravisCI, TeamCityCI, Terraform, Ansible, EFK, Prometheus, Grafana",
+  "Quantum Machine Learning",
+  "Software Testing: JMeter, NightwatchJS, Lambda Test, TestMo",
+  "Game Development: C++ - Unreal Engine, Raylib, Rust - Brackettlib",
+  "Robotics using ROS2, Gazebo"
+]

@@ -1,0 +1,264 @@
+{
+  "categories": [
+    {
+      "name": "AI & Machine Learning",
+      "icon": "fa-robot",
+      "channels": [
+        {
+          "name": "Two Minute Papers",
+          "url": "https://www.youtube.com/@TwoMinutePapers",
+          "description": "AI research papers explained in 2 minutes. Covers cutting-edge ML research, computer vision, and generative AI.",
+          "subscribers": "1.2M",
+          "videos": "500+"
+        },
+        {
+          "name": "Andrej Karpathy",
+          "url": "https://www.youtube.com/@AndrejKarpathy",
+          "description": "Deep learning, neural networks, and AI from the ground up. Former Director of AI at Tesla.",
+          "subscribers": "300K",
+          "videos": "50+"
+        },
+        {
+          "name": "Sentdex",
+          "url": "https://www.youtube.com/@sentdex",
+          "description": "Practical ML, Python, and AI tutorials. Real-world applications, NLP, computer vision, and reinforcement learning.",
+          "subscribers": "1.3M",
+          "videos": "2,000+"
+        },
+        {
+          "name": "Yannic Kilcher",
+          "url": "https://www.youtube.com/@YannicKilcher",
+          "description": "In-depth AI research paper breakdowns and commentary. Critical analysis of cutting-edge ML papers.",
+          "subscribers": "200K",
+          "videos": "600+"
+        },
+        {
+          "name": "DeepLearningAI",
+          "url": "https://www.youtube.com/@Deeplearningai",
+          "description": "Andrew Ng's official channel. Deep learning, AI courses, and interviews with industry leaders.",
+          "subscribers": "1.1M",
+          "videos": "300+"
+        },
+        {
+          "name": "Lex Fridman",
+          "url": "https://www.youtube.com/@lexfridman",
+          "description": "Deep conversations on AI, science, and philosophy. Interviews with leading minds in tech and academia.",
+          "subscribers": "3.5M",
+          "videos": "400+"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Computing",
+      "icon": "fa-atom",
+      "channels": [
+        {
+          "name": "Qiskit",
+          "url": "https://www.youtube.com/@qiskit",
+          "description": "Official IBM Quantum channel. Quantum computing tutorials, research, and real quantum hardware demonstrations.",
+          "subscribers": "100K",
+          "videos": "400+"
+        },
+        {
+          "name": "PennyLane",
+          "url": "https://www.youtube.com/@PennyLaneAI",
+          "description": "Official PennyLane channel. Quantum machine learning tutorials, hybrid quantum-classical computing, and QML research.",
+          "subscribers": "12K",
+          "videos": "150+"
+        },
+        {
+          "name": "Quantum Computing Club",
+          "url": "https://www.youtube.com/@QuantumComputingClub",
+          "description": "Quantum computing tutorials, algorithm walkthroughs, and industry updates for quantum enthusiasts.",
+          "subscribers": "45K",
+          "videos": "300+"
+        }
+      ]
+    },
+    {
+      "name": "Physics",
+      "icon": "fa-flask",
+      "channels": [
+        {
+          "name": "Sabine Hossenfelder",
+          "url": "https://www.youtube.com/@SabineHossenfelder",
+          "description": "Physics, quantum mechanics, and science with a critical eye. Covers quantum computing and foundational physics.",
+          "subscribers": "1.1M",
+          "videos": "600+"
+        },
+        {
+          "name": "Veritasium",
+          "url": "https://www.youtube.com/@veritasium",
+          "description": "Science, engineering, and the nature of reality. Mind-blowing experiments and deep dives into physics.",
+          "subscribers": "14.2M",
+          "videos": "200+"
+        },
+        {
+          "name": "SmarterEveryDay",
+          "url": "https://www.youtube.com/@smartereveryday",
+          "description": "Science and engineering explained with curiosity. Deep dives into how things work.",
+          "subscribers": "11.3M",
+          "videos": "300+"
+        }
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "icon": "fa-calculator",
+      "channels": [
+        {
+          "name": "3Blue1Brown",
+          "url": "https://www.youtube.com/@3blue1brown",
+          "description": "Math visualization and intuition. Neural networks, linear algebra, calculus explained with stunning animations.",
+          "subscribers": "5.1M",
+          "videos": "150+"
+        },
+        {
+          "name": "Numberphile",
+          "url": "https://www.youtube.com/@numberphile",
+          "description": "Mathematics and numbers. Fascinating insights into the world of math.",
+          "subscribers": "4.4M",
+          "videos": "500+"
+        },
+        {
+          "name": "Stand-up Maths",
+          "url": "https://www.youtube.com/@standupmaths",
+          "description": "Fun and accessible mathematics with Matt Parker. Comedic take on mathematical concepts.",
+          "subscribers": "1.2M",
+          "videos": "200+"
+        },
+        {
+          "name": "Mathologer",
+          "url": "https://www.youtube.com/@Mathologer",
+          "description": "Deep dives into beautiful and surprising mathematics. Visual proofs and mathematical discoveries.",
+          "subscribers": "1M",
+          "videos": "150+"
+        }
+      ]
+    },
+    {
+      "name": "Science & Education",
+      "icon": "fa-graduation-cap",
+      "channels": [
+        {
+          "name": "Kurzgesagt",
+          "url": "https://www.youtube.com/@kurzgesagt",
+          "description": "Science animated. Astrophysics, biology, and existential questions explained with stunning animations.",
+          "subscribers": "20.5M",
+          "videos": "200+"
+        },
+        {
+          "name": "Vsauce",
+          "url": "https://www.youtube.com/@Vsauce",
+          "description": "Curious science, psychology, and philosophy. Mind-bending questions and deep exploration.",
+          "subscribers": "18.5M",
+          "videos": "200+"
+        },
+        {
+          "name": "The Why Files",
+          "url": "https://www.youtube.com/@TheWhyFiles",
+          "description": "Exploring science, mysteries, and the unexplained. Debunking conspiracies and exploring the unknown.",
+          "subscribers": "2.8M",
+          "videos": "200+"
+        },
+        {
+          "name": "SciShow",
+          "url": "https://www.youtube.com/@SciShow",
+          "description": "Science explained simply. Covers biology, chemistry, physics, and space in an accessible way.",
+          "subscribers": "8M",
+          "videos": "2,000+"
+        }
+      ]
+    },
+    {
+      "name": "Software Engineering",
+      "icon": "fa-code",
+      "channels": [
+        {
+          "name": "The Primeagen",
+          "url": "https://www.youtube.com/@ThePrimeagen",
+          "description": "Software engineering, Vim, Rust, and tech culture. Entertaining and insightful content for developers.",
+          "subscribers": "500K",
+          "videos": "800+"
+        },
+        {
+          "name": "Fireship",
+          "url": "https://www.youtube.com/@Fireship",
+          "description": "Blazing fast tech tutorials. Covers JavaScript, frameworks, cloud, and modern web development.",
+          "subscribers": "2.3M",
+          "videos": "700+"
+        },
+        {
+          "name": "Theo - t3.gg",
+          "url": "https://www.youtube.com/@t3dotgg",
+          "description": "Full-stack development, TypeScript, and modern web architectures. Real-world software engineering insights.",
+          "subscribers": "250K",
+          "videos": "500+"
+        },
+        {
+          "name": "CodeAesthetic",
+          "url": "https://www.youtube.com/@CodeAesthetic",
+          "description": "Beautiful code and software design. Clean code principles, architecture, and engineering excellence.",
+          "subscribers": "150K",
+          "videos": "100+"
+        },
+        {
+          "name": "ArjanCodes",
+          "url": "https://www.youtube.com/@ArjanCodes",
+          "description": "Python software engineering, clean code, and design patterns. Real-world software architecture lessons.",
+          "subscribers": "100K",
+          "videos": "200+"
+        },
+        {
+          "name": "Hussein Nasser",
+          "url": "https://www.youtube.com/@HusseinNasser-js",
+          "description": "Backend engineering, databases, and system design. Practical software architecture and infrastructure.",
+          "subscribers": "200K",
+          "videos": "1,000+"
+        },
+        {
+          "name": "HackerRank",
+          "url": "https://www.youtube.com/@HackerRank",
+          "description": "Coding challenges, interview prep, and algorithm tutorials. Ace your coding interviews with practice.",
+          "subscribers": "500K",
+          "videos": "300+"
+        }
+      ]
+    },
+    {
+      "name": "Tech & Innovation",
+      "icon": "fa-lightbulb",
+      "channels": [
+        {
+          "name": "Marques Brownlee (MKBHD)",
+          "url": "https://www.youtube.com/@mkbhd",
+          "description": "High-quality tech reviews. Smartphones, laptops, cars, and the latest tech innovations.",
+          "subscribers": "18.5M",
+          "videos": "1,500+"
+        },
+        {
+          "name": "Linus Tech Tips",
+          "url": "https://www.youtube.com/@LinusTechTips",
+          "description": "PC hardware, gaming, and tech experiments. Detailed reviews and tech entertainment.",
+          "subscribers": "15.6M",
+          "videos": "7,000+"
+        },
+        {
+          "name": "The Verge",
+          "url": "https://www.youtube.com/@verge",
+          "description": "Tech reviews, science, and culture. In-depth coverage of the latest tech trends.",
+          "subscribers": "1.8M",
+          "videos": "5,000+"
+        },
+        {
+          "name": "ColdFusion",
+          "url": "https://www.youtube.com/@ColdFusion",
+          "description": "Tech history and innovation. Fascinating stories about technology and its impact on society.",
+          "subscribers": "2.1M",
+          "videos": "300+"
+        }
+      ]
+    }
+
+  ]
+}

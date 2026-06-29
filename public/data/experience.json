@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Chief Technology Officer",
+    "company": "Lovelocal",
+    "location": "Bengaluru, India",
+    "period": "10/2024 – 02/2026",
+    "highlights": [
+      "Led a team of 30, directing technology roadmaps and budget planning for 2024-26 in alignment with business objectives",
+      "Reduced IT infrastructure costs by 30% and cut technical debt by 80% within 12 months through systematic modernization",
+      "Boosted developer output by 25% by integrating AI-powered tools (Windsurf, Korbit.ai, Hivel) and tracking performance metrics",
+      "Designed an AI Smart Shopping assistant (ASR, TTS, OCR) that streamlined the customer purchase journey and enhanced user engagement",
+      "Drove enterprise-wide AI adoption, including AI-driven user interfaces and a 40% search performance gain via Typesense tuning",
+      "Architected an AI Smart Catalogue using Computer Vision and Multi-AI Agents to personalise and elevate the customer experience",
+      "Architected an AI Recommender System to boost funnel conversion",
+      "Built scalable data pipelines (Airflow, Airbyte, DBT, Snowflake) enabling real-time analytics and faster business insights",
+      "Secured cloud infrastructure with Google Cloud Armor, reducing vulnerabilities by 60% and strengthening overall security posture",
+      "Accelerated release cycles by 35% through CI/CD and workflow automation, improving time-to-market",
+      "Reduced application size using R8 compilation and App Thinning, enhancing download speeds and user experience"
+    ]
+  },
+  {
+    "title": "Director of Engineering",
+    "company": "Nykaa - FSN International Private Limited",
+    "location": "Bengaluru, India",
+    "period": "11/2023 – 05/2024",
+    "highlights": [
+      "Defined engineering budgets aligned with business objectives, optimising ROI by 25% through cost-efficient resource allocation",
+      "Established technology and product roadmaps for Nykaa's international e-commerce platform in the GCC, ensuring scalable market entry and regional readiness",
+      "Led the successful launch of Nykaa's GCC e-commerce platform, driving regional revenue growth and market presence",
+      "Built a Cloud Analytics platform consolidating data from MoEngage, GA4, Google/Facebook Ads, and Firestore, improving decision-making latency by 40% for faster business insights",
+      "Led a global team of 18 across Product, UI/UX, and Engineering (India and UAE), fostering seamless cross-functional collaboration",
+      "Drove recruitment of top-tier software engineers, reducing time-to-hire by 30% while maintaining a 90% retention rate through strong talent engagement and development"
+    ]
+  },
+  {
+    "title": "Chief Technology Officer",
+    "company": "Seniority Private Limited, Evergreen Community Pvt. Ltd. (An RPG Company)",
+    "location": "Bengaluru, India",
+    "period": "06/2021 – 10/2022",
+    "highlights": [
+      "Spearheaded company-wide technology and product strategy, aligning roadmaps with budgetary constraints while driving innovation",
+      "Reduced technology operational costs by 40% through infrastructure optimization and process improvements",
+      "Led architecture and development of senior-focused social platform featuring real-time feed system with edge ranking algorithm for personalized content delivery",
+      "Implemented GDPR-compliant privacy layer ensuring full regulatory compliance",
+      "Developed AI-powered content moderation (Computer Vision) achieving 92% accuracy in inappropriate content detection",
+      "Built scalable infrastructure supporting 30,000+ concurrent users using Node.js, Next.js, React Native, Neo4J, PostgreSQL, Redis, AWS (EC2, Lambda, API Gateway), Kafka",
+      "Designed scalable notification system handling 5,000+ events/sec using Kafka, gRPC, and Protocol Buffers",
+      "Built voucher generation service processing 50k+ daily transactions with 99.99% uptime",
+      "Developed GCP-based analytics platform (BigQuery, Cloud Composer) reducing marketing insights latency from 24hrs to 15 minutes",
+      "Created Data Studio dashboards adopted by 80% of business teams for decision-making",
+      "Managed cross-functional team of 30+ (engineers, UI/UX, product)",
+      "Directed development of Seniority eCommerce platform (web + mobile) achieving 95% accessibility compliance for senior users"
+    ]
+  },
+  {
+    "title": "Principal Architect - Tech/Senior Manager - Tech",
+    "company": "Byju's Think and Learn Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "03/2019 – 06/2021",
+    "highlights": [
+      "Led a global team of 40 in U.S.A, France and India to design and develop micro-frontends based highly scalable website",
+      "Developed an eCommerce web application in Shopify and a microservices based comprehensive learning management platform capable of supporting 100k+ real-time users",
+      "Built SPA based web applications using NodeJS, NextJS, ReactJS, MongoDB, MYSQL, Redis, GatsbyJS, Wordpress, AWS API Gateway, AWS Elastic Beanstalk, TravisCI, SonarCloud, JMeter, NightwatchJS, EFK, AWS Lambda and AWS SQS",
+      "Designed and developed Cloud BI and Analytics Platform using Apache Airflow, Apache Kafka, MongoDB, AWS Redshift, Tableau integrating data from Leads app, Sales app, Facebook Ad Insights API, Google Analytics API, Google Ads API (using Python multiprocessing) etc.",
+      "Developed in-house fraud analytics platform using Python, Apache Airflow and AWS Redshift",
+      "Designed and developed a warehouse management system and mentored 50+ employees on Python, Javascript, SQL and NoSQL databases"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "episodes": [
+    {
+      "id": 1,
+      "title": "Quantum Machine Learning with Dr. Maria Schuld",
+      "guest": "Dr. Maria Schuld",
+      "guestTitle": "Senior Research Scientist at Xanadu, QML Pioneer",
+      "guestImage": "https://ui-avatars.com/api/?name=Maria+Schuld&background=20b2aa&color=fff&size=200",
+      "date": "2024-01-20",
+      "duration": "45:32",
+      "category": "Quantum Machine Learning",
+      "topics": ["Quantum kernel methods", "QML challenges", "Near-term quantum advantage", "PennyLane and Xanadu"],
+      "summary": "Dr. Maria Schuld discusses the current state of quantum machine learning, the challenges of near-term quantum devices, and the future of QML research.",
+      "keyInsights": [
+        "Quantum kernels can provide advantage on specific problems",
+        "Data encoding is a critical challenge",
+        "Hybrid quantum-classical models are the near-term path",
+        "Open-source frameworks like PennyLane are accelerating research"
+      ],
+      "links": {
+        "spotify": "https://open.spotify.com/episode/example",
+        "apple": "https://podcasts.apple.com/us/podcast/example",
+        "youtube": "https://youtu.be/example"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Multi-Agent AI Systems with Dr. Yoav Shoham",
+      "guest": "Dr. Yoav Shoham",
+      "guestTitle": "Professor Emeritus at Stanford, Co-founder of AI21 Labs",
+      "guestImage": "https://ui-avatars.com/api/?name=Yoav+Shoham&background=20b2aa&color=fff&size=200",
+      "date": "2024-01-15",
+      "duration": "52:18",
+      "category": "AI/ML",
+      "topics": ["Multi-agent systems", "AI21 Labs", "Generative AI", "AI safety"],
+      "summary": "Dr. Yoav Shoham discusses the evolution of multi-agent systems, the challenges of scaling AI, and building responsible AI.",
+      "keyInsights": [
+        "Multi-agent systems will be the next frontier",
+        "AI safety is non-negotiable",
+        "Coordination is the key challenge",
+        "Foundation models are democratizing AI"
+      ],
+      "links": {
+        "spotify": "https://open.spotify.com/episode/example",
+        "apple": "https://podcasts.apple.com/us/podcast/example",
+        "youtube": "https://youtu.be/example"
+      }
+    }
+  ],
+  "stats": {
+    "totalEpisodes": 2,
+    "guestCount": 2
+  }
+}

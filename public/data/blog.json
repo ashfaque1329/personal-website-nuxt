@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Quantum Machine Learning: Bridging the Gap Between Quantum Computing and AI",
+    "category": "Quantum Computing",
+    "date": "2024-01-15",
+    "excerpt": "Exploring how quantum computing can revolutionize machine learning and the challenges we face today."
+  },
+  {
+    "id": 2,
+    "title": "Building Multi-Agent AI Systems with CrewAI and AutoGen",
+    "category": "AI/ML",
+    "date": "2024-01-10",
+    "excerpt": "A practical guide to building collaborative AI systems using CrewAI and Microsoft AutoGen frameworks."
+  },
+  {
+    "id": 3,
+    "title": "The Art of Scalable Microservices: Lessons from 13 Years in Tech",
+    "category": "Software Architecture",
+    "date": "2024-01-05",
+    "excerpt": "Key architectural decisions, pitfalls to avoid, and patterns that actually work in production."
+  },
+  {
+    "id": 4,
+    "title": "RAG Systems: From Theory to Production",
+    "category": "AI/ML",
+    "date": "2023-12-20",
+    "excerpt": "Building production-ready Retrieval-Augmented Generation systems with vector databases and LLMs."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "tech": [
+    { "title": "The Alignment Problem", "author": "Brian Christian" },
+    { "title": "Quantum Computing for Everyone", "author": "Chris Bernhardt" },
+    { "title": "Deep Learning", "author": "Ian Goodfellow" },
+    { "title": "The Art of Scalability", "author": "Martin Abbott" }
+  ],
+  "nonTech": [
+    { "title": "The Power of Habit", "author": "Charles Duhigg" },
+    { "title": "Thinking, Fast and Slow", "author": "Daniel Kahneman" },
+    { "title": "Start With Why", "author": "Simon Sinek" },
+    { "title": "The Art of War", "author": "Sun Tzu" }
+  ]
+}

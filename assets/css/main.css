@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f0faf8;
+    color: #1a3a4a;
+    scroll-behavior: smooth;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(32, 178, 170, 0.1);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(32, 178, 170, 0.08);
+}
+
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    border-left: 5px solid #20b2aa;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    color: #0d2b3e;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.section-title i {
+    color: #20b2aa;
+    font-size: 1.6rem;
+}
+
+.badge {
+    background: linear-gradient(135deg, #e0f7f5, #c8f0eb);
+    padding: 0.3rem 1.2rem;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0d5c5a;
+    border: 1px solid rgba(32, 178, 170, 0.15);
+}
+
+.tech-tag {
+    background: rgba(32, 178, 170, 0.08);
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: #0d5c5a;
+    border: 1px solid rgba(32, 178, 170, 0.1);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f0faf8;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #20b2aa, #48c9c0);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1a9e97;
+}

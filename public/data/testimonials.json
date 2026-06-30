@@ -8,5 +8,15 @@
     "rating": 5,
     "relation": "Former Colleague at Byju's and Evergreen Community",
     "date": "2024-10-24"
+  },
+  {
+   "id": 2,
+    "name": "Shashank V.",
+    "title": "Lead SDE",
+    "avatar": "",
+    "text": "Working with Ashfaque was one of the most valuable experiences in my career. His expertise in backend engineering, databases, and cloud architecture is exceptional. Beyond solving complex technical challenges, he has a remarkable ability to simplify difficult concepts and design scalable, reliable systems.What sets him apart is his leadership and willingness to mentor others. He consistently invested time in guiding me through technical challenges, encouraged me to think critically, and helped me grow as a backend engineer. His feedback was always practical, thoughtful, and focused on long-term improvement.He leads by example, stays calm under pressure, and makes well-informed technical decisions while keeping the team's growth in mind. On top of being an outstanding engineer and technology leader, he is a genuinely kind, approachable, and trustworthy person.I highly recommend him to any organization looking for a strong technical leader with deep expertise in backend systems, databases, cloud technologies, and team mentorship. Any team would be fortunate to work with him.",
+    "rating": 5,
+    "relation": "Former Colleague at Lovelocal",
+    "date": "2026-06-30"
   }
 ]

@@ -38,8 +38,7 @@ export default defineNuxtConfig({
     }],
     '@nuxtjs/sitemap',
     'nuxt-schema-org',
-    '@nuxt/image',
-    '@vercel/analytics/nuxt'
+    '@nuxt/image'
   ],
 
   nitro: {

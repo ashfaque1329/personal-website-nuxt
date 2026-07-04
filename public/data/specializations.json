@@ -15,19 +15,25 @@
     "name": "C++ Nanodegree",
     "issuer": "Udacity",
     "date": "2023-08",
-    "url": "https://graduation.udacity.com/confirm/e/15ab9da6-fba4-11ea-bed8-0f668f2e70a7"
+    "url": "https://www.udacity.com/certificate/e/15ab9da6-fba4-11ea-bed8-0f668f2e70a7"
   },
   {
     "name": "Machine Learning Specialization",
-    "issuer": "Coursera",
+    "issuer": "DeepLearning.AI",
     "date": "2023-01",
     "url": "https://www.coursera.org/account/accomplishments/specialization/KFMZTWH5UE7A"
   },
   {
     "name": "C++ Programming for Unreal Game Development",
-    "issuer": "Coursera",
+    "issuer": "University of Colorado",
     "date": "2023-01",
     "url": "https://www.coursera.org/account/accomplishments/specialization/5YN298HS48DG"
+  },
+  {
+    "name": "Scalability & System Design for Developers",
+    "issuer": "Educative.IO",
+    "date": "2022-03",
+    "url": "https://www.educative.io/verify-certificate/1j8yMXCLLq41R5p34UA5Ap3yVJR7Sp"
   },
   {
     "name": "IOT Foundations Nanodegree Program",
@@ -39,6 +45,6 @@
     "name": "React Nanodegree Program",
     "issuer": "Udacity",
     "date": "2018-04",
-    "url": "https://graduation.udacity.com/confirm/CJMHTMML"
+    "url": "https://www.udacity.com/certificate/e/d69b836e-e40a-11e7-b561-fba7bae84fd1"
   }
 ]

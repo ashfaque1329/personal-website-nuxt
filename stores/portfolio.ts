@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 export const usePortfolioStore = defineStore('portfolio', {
     state: () => ({
         profile: null as any,
-        summary: null as any,
+        summaryInfographic: null as any,  // ✅ Keep this
         skills: [] as any[],
         experience: [] as any[],
         education: [] as any[],
@@ -15,6 +15,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         hobbies: [] as any[],
         loading: false,
         error: null as string | null
+        // ❌ summary: null as any,  ← REMOVED
     }),
 
     getters: {
@@ -25,7 +26,9 @@ export const usePortfolioStore = defineStore('portfolio', {
         linkedin: (state) => state.profile?.linkedin || '',
         github: (state) => state.profile?.github || '',
         languages: (state) => state.profile?.languages || {},
-        summaryText: (state) => state.summary?.text || '',
+        // ❌ summaryText: (state) => state.summary?.text || '',  ← REMOVED
+
+        summaryInfographicData: (state) => state.summaryInfographic || {},
         allSkills: (state) => state.skills,
         allExperience: (state) => state.experience,
         allEducation: (state) => state.education,
@@ -34,20 +37,42 @@ export const usePortfolioStore = defineStore('portfolio', {
         allAchievements: (state) => state.achievements,
         allHobbies: (state) => state.hobbies,
         allSpecializations: (state) => state.specializations,
-        thesisData: (state) => state.thesis
+        thesisData: (state) => state.thesis,
+
+        // Identity getters
+        identityTitle: (state) => state.summaryInfographic?.identity?.title || 'CTO / AI Researcher',
+        identitySubtitle: (state) => state.summaryInfographic?.identity?.subtitle || '13+ Years • 5 Countries • 4+ Domains',
+
+        // Stats getter
+        statsData: (state) => state.summaryInfographic?.stats || [],
+
+        // Expertise getter
+        expertiseData: (state) => state.summaryInfographic?.expertise || [],
+
+        // Domains getter
+        domainsData: (state) => state.summaryInfographic?.domains || [],
+
+        // Compliance getter
+        complianceData: (state) => state.summaryInfographic?.compliance || [],
+
+        // University getter
+        universityData: (state) => state.summaryInfographic?.university || {}
     },
 
     actions: {
         async fetchAllData() {
             this.loading = true
             this.error = null
+
             try {
                 const base = '/data'
-                const [profile, summary, skills, experience, education,
+                const [
+                    profile, summaryInfographic, skills, experience, education,
                     thesis, specializations, certifications, projects,
-                    achievements, hobbies] = await Promise.all([
+                    achievements, hobbies
+                ] = await Promise.all([
                     fetch(`${base}/profile.json`).then(r => r.json()),
-                    fetch(`${base}/summary.json`).then(r => r.json()),
+                    fetch(`${base}/summary-infographic.json`).then(r => r.json()),  // ✅ New file
                     fetch(`${base}/skills.json`).then(r => r.json()),
                     fetch(`${base}/experience.json`).then(r => r.json()),
                     fetch(`${base}/education.json`).then(r => r.json()),
@@ -60,7 +85,8 @@ export const usePortfolioStore = defineStore('portfolio', {
                 ])
 
                 this.profile = profile
-                this.summary = summary
+                this.summaryInfographic = summaryInfographic
+                // ❌ this.summary = summary  ← REMOVED
                 this.skills = skills
                 this.experience = experience
                 this.education = education
@@ -70,6 +96,7 @@ export const usePortfolioStore = defineStore('portfolio', {
                 this.projects = projects
                 this.achievements = achievements
                 this.hobbies = hobbies
+
             } catch (error: any) {
                 this.error = error.message
                 console.error('Failed to load portfolio data:', error)

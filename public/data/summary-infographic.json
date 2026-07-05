@@ -1,0 +1,25 @@
+{
+  "identity": {
+    "title": "CTO / AI Researcher",
+    "subtitle": "13+ Years • 5 Countries • 4+ Domains"
+  },
+  "stats": [
+    { "icon": "🏗️", "number": "13+", "label": "Years of Experience" },
+    { "icon": "🌍", "number": "5", "label": "Countries Worked" },
+    { "icon": "👥", "number": "30-40", "label": "Team Size Led" },
+    { "icon": "🏢", "number": "4+", "label": "Industry Domains" }
+  ],
+  "expertise": [
+    { "icon": "🏗️", "name": "System Architecture", "description": "Microservices, Modular Monoliths, Serverless, Event-driven" },
+    { "icon": "🧠", "name": "AI / Machine Learning", "description": "AI, Generative AI, RAG, Multi-Agent Systems" },
+    { "icon": "⚛️", "name": "Quantum Computing / QML", "description": "Quantum Computing, Quantum ML" },
+    { "icon": "☁️", "name": "Cloud & DevOps", "description": "AWS, GCP, Docker, Kubernetes" },
+    { "icon": "🎮", "name": "Game Dev & Robotics", "description": "Unreal Engine, C++, Rust, ROS2, Gazebo" }
+  ],
+  "domains": ["🏥 Healthcare", "💰 Fintech", "🛒 E-commerce", "📚 Ed-tech", "📦 SaaS"],
+  "compliance": ["🔒 GDPR ✓", "🔐 HIPAA ✓", "🛡️ SOC2 ✓", "✅ ISO ✓", "🔗 HRIS ✓", "🔑 SSO ✓", "📋 LTI ✓"],
+  "university": {
+    "name": "University of Liverpool",
+    "degree": "M.Sc. in Artificial Intelligence"
+  }
+}

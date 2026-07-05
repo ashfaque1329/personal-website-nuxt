@@ -28,12 +28,72 @@
       </div>
     </header>
 
-    <!-- Summary -->
-    <section class="glass summary-section">
-      <p>{{ store.summaryText }}</p>
+    <!-- ===== INFOGRAPHIC SUMMARY (Dynamic from JSON) ===== -->
+    <section class="infographic-summary">
+      <!-- Core Identity -->
+      <div class="identity-banner">
+        <div class="identity-text">
+          <span class="identity-emoji">🚀</span>
+          <span class="identity-title">{{ store.identityTitle }}</span>
+          <span class="identity-divider">•</span>
+          <span class="identity-subtitle">{{ store.identitySubtitle }}</span>
+        </div>
+      </div>
+
+      <!-- Stats Dashboard -->
+      <div class="stats-dashboard">
+        <div class="stat-card" v-for="stat in store.statsData" :key="stat.label">
+          <div class="stat-icon">{{ stat.icon }}</div>
+          <div class="stat-number">{{ stat.number }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+
+      <!-- University of Liverpool -->
+      <div class="university-banner">
+        <div class="university-content">
+          <div class="university-icon">
+            <img
+                src="/images/university-logo.svg"
+                alt="University of Liverpool"
+                class="university-logo"
+                loading="lazy"
+            />
+          </div>
+          <div class="university-info">
+            <span class="university-name">{{ store.universityData.name }}</span>
+            <span class="university-degree">{{ store.universityData.degree }}</span>
+            <span class="university-thesis">{{ store.universityData.thesis }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expertise Grid -->
+      <div class="expertise-grid">
+        <div class="expertise-card" v-for="exp in store.expertiseData" :key="exp.name">
+          <div class="expertise-icon">{{ exp.icon }}</div>
+          <h4>{{ exp.name }}</h4>
+          <p>{{ exp.description }}</p>
+        </div>
+      </div>
+
+      <!-- Domains & Compliance -->
+      <div class="domains-section">
+        <div class="domains-grid">
+          <div class="domain-tag" v-for="domain in store.domainsData" :key="domain">
+            {{ domain }}
+          </div>
+        </div>
+
+        <div class="compliance-grid">
+          <div class="compliance-tag" v-for="tag in store.complianceData" :key="tag">
+            {{ tag }}
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills - Organized by Category -->
+    <!-- Skills -->
     <section>
       <h2 class="section-title"><i class="fas fa-code"></i> Skills & Technologies</h2>
       <div class="glass skills-container">
@@ -155,7 +215,7 @@ const getSkillsByCategory = (category: string) => {
 
 useSEO({
   title: 'Home',
-  description: store.summaryText.slice(0, 160),
+  description: 'CTO / AI Researcher with 13+ years experience in AI/ML, Quantum Computing, and scalable architectures.',
   url: '/'
 })
 </script>
@@ -222,13 +282,12 @@ useSEO({
 }
 
 .hero-graduation {
-  font-size: 1.0rem;
+  font-size: 1rem;
   color: #1a5c5a;
   font-weight: 500;
   margin-top: 0.4rem;
   -webkit-text-fill-color: #1a5c5a;
 }
-
 
 .hero-contact {
   display: flex;
@@ -282,18 +341,232 @@ useSEO({
   border-top: 1px solid rgba(32, 178, 170, 0.15);
 }
 
-.summary-section {
-  padding: 1.8rem 2.2rem;
+/* ===== INFOGRAPHIC SUMMARY ===== */
+.infographic-summary {
   margin-bottom: 2.5rem;
 }
 
-.summary-section p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #1a3a4a;
+/* Identity Banner */
+.identity-banner {
+  background: linear-gradient(135deg, #0d2b3e, #1a5c5a);
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-/* ===== SKILLS - ORGANIZED ===== */
+.identity-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.identity-emoji {
+  font-size: 2rem;
+}
+
+.identity-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.identity-divider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.identity-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+/* Stats Dashboard */
+.stats-dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(32, 178, 170, 0.1);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(32, 178, 170, 0.1);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0d2b3e;
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #1a5c5a;
+  font-weight: 500;
+}
+
+/* University of Liverpool Banner - Minimal Padding */
+.university-banner {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(32, 178, 170, 0.1);
+  border-radius: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.university-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.university-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.university-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.university-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.university-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0d2b3e;
+}
+
+.university-degree {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a5c5a;
+}
+
+.university-thesis {
+  font-size: 0.8rem;
+  color: #2a7a72;
+  font-weight: 400;
+}
+
+/* Expertise Grid */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.expertise-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(32, 178, 170, 0.08);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.expertise-card:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(32, 178, 170, 0.08);
+}
+
+.expertise-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.expertise-card h4 {
+  font-size: 0.8rem;
+  color: #0d2b3e;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.expertise-card p {
+  font-size: 0.65rem;
+  color: #1a5c5a;
+  line-height: 1.3;
+}
+
+/* Domains & Compliance */
+.domains-section {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(32, 178, 170, 0.1);
+  border-radius: 0.8rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.domains-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.domain-tag {
+  background: rgba(32, 178, 170, 0.08);
+  padding: 0.2rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #0d5c5a;
+  border: 1px solid rgba(32, 178, 170, 0.1);
+}
+
+.compliance-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(32, 178, 170, 0.06);
+}
+
+.compliance-tag {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #1a5c5a;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.15rem 0.6rem;
+  border-radius: 10px;
+  border: 1px solid rgba(32, 178, 170, 0.06);
+}
+
+/* Skills */
 .skills-container {
   padding: 2rem 2.2rem;
   margin-bottom: 2.5rem;
@@ -381,6 +654,19 @@ useSEO({
   color: #20b2aa;
 }
 
+/* Responsive */
+@media (max-width: 1200px) {
+  .expertise-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     padding: 1.5rem;
@@ -392,9 +678,92 @@ useSEO({
   .hero-title {
     font-size: 1.1rem;
   }
+
+  .identity-text {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .identity-divider {
+    display: none;
+  }
+  .identity-title {
+    font-size: 1.1rem;
+  }
+
+  .stats-dashboard {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  .stat-card {
+    padding: 0.8rem;
+  }
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .university-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .university-info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .university-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .university-name {
+    font-size: 1rem;
+  }
+  .university-degree {
+    font-size: 0.8rem;
+  }
+  .university-thesis {
+    font-size: 0.7rem;
+  }
+
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  .expertise-card {
+    padding: 0.8rem;
+  }
+  .expertise-icon {
+    font-size: 1.5rem;
+  }
+  .expertise-card h4 {
+    font-size: 0.75rem;
+  }
+  .expertise-card p {
+    font-size: 0.6rem;
+  }
+
+  .domains-section {
+    padding: 0.8rem 1rem;
+  }
+
   .quick-nav {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+  .stat-number {
+    font-size: 1.4rem;
+  }
+  .expertise-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 </style>

@@ -93,71 +93,16 @@
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills - Dynamically from JSON -->
     <section>
       <h2 class="section-title"><i class="fas fa-code"></i> Skills & Technologies</h2>
       <div class="glass skills-container">
-        <div class="skills-category">
+        <div v-for="(category, index) in skillCategories" :key="index" class="skills-category">
           <h3 class="skills-category-title">
-            <i class="fas fa-brain"></i> AI & Machine Learning
+            <i :class="category.icon"></i> {{ category.name }}
           </h3>
           <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in getSkillsByCategory('AI')" :key="skill">
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category-title">
-            <i class="fas fa-atom"></i> Quantum & Advanced Computing
-          </h3>
-          <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in getSkillsByCategory('Quantum')" :key="skill">
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category-title">
-            <i class="fas fa-globe"></i> Web & Mobile Development
-          </h3>
-          <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in getSkillsByCategory('Web')" :key="skill">
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category-title">
-            <i class="fas fa-database"></i> Databases & Data Engineering
-          </h3>
-          <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in getSkillsByCategory('Database')" :key="skill">
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category-title">
-            <i class="fas fa-cloud"></i> Cloud & DevOps
-          </h3>
-          <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in getSkillsByCategory('DevOps')" :key="skill">
-              {{ skill }}
-            </span>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3 class="skills-category-title">
-            <i class="fas fa-gamepad"></i> Game Development & Robotics
-          </h3>
-          <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in getSkillsByCategory('Game')" :key="skill">
+            <span class="skill-tag" v-for="skill in category.skills" :key="skill">
               {{ skill }}
             </span>
           </div>
@@ -174,13 +119,49 @@ import { useSEO } from '~/composables/useSEO'
 const store = usePortfolioStore()
 await store.fetchAllData()
 
-const getSkillsByCategory = (category: string) => {
+// Categorize skills dynamically from store.allSkills
+const skillCategories = computed(() => {
   const allSkills = store.allSkills || []
 
-  const categories: Record<string, string[]> = {
+  const categories: Record<string, { name: string; icon: string; skills: string[] }> = {
+    'AI': {
+      name: 'AI & Machine Learning',
+      icon: 'fas fa-brain',
+      skills: [] as string[]
+    },
+    'Quantum': {
+      name: 'Quantum & Advanced Computing',
+      icon: 'fas fa-atom',
+      skills: [] as string[]
+    },
+    'Web': {
+      name: 'Web & Mobile Development',
+      icon: 'fas fa-globe',
+      skills: [] as string[]
+    },
+    'Database': {
+      name: 'Databases & Data Engineering',
+      icon: 'fas fa-database',
+      skills: [] as string[]
+    },
+    'DevOps': {
+      name: 'Cloud & DevOps',
+      icon: 'fas fa-cloud',
+      skills: [] as string[]
+    },
+    'Game': {
+      name: 'Game Development & Robotics',
+      icon: 'fas fa-gamepad',
+      skills: [] as string[]
+    }
+  }
+
+  // Define skill mappings based on keywords
+  const skillMappings: Record<string, string[]> = {
     'AI': [
       'AI, Deep Learning, Machine Learning, Generative AI',
-      'RAG, Multi AI Agents (CrewAI, Autogen)'
+      'RAG, Multi AI Agents (CrewAI, Autogen, LangGraph)',
+      'AI, Deep Learning, Machine Learning, Generative AI'
     ],
     'Quantum': [
       'Quantum Machine Learning, Qiskit, PennyLane',
@@ -200,18 +181,28 @@ const getSkillsByCategory = (category: string) => {
       'Real Time Data Processing: Apache Storm, Apache Kafka, Apache Spark'
     ],
     'DevOps': [
-      'DevOps: Docker, Kubernetes, JenkinsCI, TravisCI, TeamCityCI, Terraform, Ansible, EFK, Prometheus, Grafana'
+      'DevOps: Docker, Kubernetes, JenkinsCI, TravisCI, TeamCityCI, Terraform, Ansible, EFK, Prometheus, Grafana',
+      'Software Testing: JMeter, NightwatchJS, Lambda Test, TestMo'
     ],
     'Game': [
       'Game Development: C++ - Unreal Engine, Raylib, Rust - Brackettlib',
-      'Robotics using ROS2',
-      'C, Modern C++, Rust, 6502 Assembly Programming',
-      'Software Testing: JMeter, NightwatchJS, Lambda Test, TestMo'
+      'Robotics: C++ - ROS2, Gazebo, CoppeliaSim',
+      'C, Modern C++, Rust, 6502 Assembly Programming'
     ]
   }
 
-  return categories[category] || []
-}
+  // Assign skills to categories
+  allSkills.forEach((skill: string) => {
+    for (const [categoryKey, keywords] of Object.entries(skillMappings)) {
+      if (keywords.some(kw => skill.toLowerCase().includes(kw.toLowerCase()))) {
+        categories[categoryKey].skills.push(skill)
+        return
+      }
+    }
+  })
+
+  return Object.values(categories).filter(cat => cat.skills.length > 0)
+})
 
 useSEO({
   title: 'Home',

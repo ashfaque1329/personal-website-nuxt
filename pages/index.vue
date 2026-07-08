@@ -93,19 +93,14 @@
       </div>
     </section>
 
-    <!-- Skills - Dynamically from JSON -->
+    <!-- Skills - Simple Display from JSON -->
     <section>
       <h2 class="section-title"><i class="fas fa-code"></i> Skills & Technologies</h2>
       <div class="glass skills-container">
-        <div v-for="(category, index) in skillCategories" :key="index" class="skills-category">
-          <h3 class="skills-category-title">
-            <i :class="category.icon"></i> {{ category.name }}
-          </h3>
-          <div class="skills-grid">
-            <span class="skill-tag" v-for="skill in category.skills" :key="skill">
-              {{ skill }}
-            </span>
-          </div>
+        <div class="skills-grid">
+          <span class="skill-tag" v-for="skill in store.allSkills" :key="skill">
+            {{ skill }}
+          </span>
         </div>
       </div>
     </section>
@@ -118,91 +113,6 @@ import { useSEO } from '~/composables/useSEO'
 
 const store = usePortfolioStore()
 await store.fetchAllData()
-
-// Categorize skills dynamically from store.allSkills
-const skillCategories = computed(() => {
-  const allSkills = store.allSkills || []
-
-  const categories: Record<string, { name: string; icon: string; skills: string[] }> = {
-    'AI': {
-      name: 'AI & Machine Learning',
-      icon: 'fas fa-brain',
-      skills: [] as string[]
-    },
-    'Quantum': {
-      name: 'Quantum & Advanced Computing',
-      icon: 'fas fa-atom',
-      skills: [] as string[]
-    },
-    'Web': {
-      name: 'Web & Mobile Development',
-      icon: 'fas fa-globe',
-      skills: [] as string[]
-    },
-    'Database': {
-      name: 'Databases & Data Engineering',
-      icon: 'fas fa-database',
-      skills: [] as string[]
-    },
-    'DevOps': {
-      name: 'Cloud & DevOps',
-      icon: 'fas fa-cloud',
-      skills: [] as string[]
-    },
-    'Game': {
-      name: 'Game Development & Robotics',
-      icon: 'fas fa-gamepad',
-      skills: [] as string[]
-    }
-  }
-
-  // Define skill mappings based on keywords
-  const skillMappings: Record<string, string[]> = {
-    'AI': [
-      'AI, Deep Learning, Machine Learning, Generative AI',
-      'RAG, Multi AI Agents (CrewAI, Autogen, LangGraph)',
-      'AI, Deep Learning, Machine Learning, Generative AI'
-    ],
-    'Quantum': [
-      'Quantum Machine Learning, Qiskit, PennyLane',
-      'Quantum Machine Learning'
-    ],
-    'Web': [
-      'Web Application Frontend: ReactJS, JQuery, Svelte, NextJS, Apollo GraphQL',
-      'Web Application Backend: FastAPI, Django, Flask, Node.js, Laravel, GraphQL',
-      'Mobile Application Development: React Native, Android Kotlin/Java, iOS Swift'
-    ],
-    'Database': [
-      'SQL Databases: MariaDB, MySQL, Oracle, MS SQL, Google BigQuery, Snowflake, PostgreSQL, Amazon Redshift',
-      'NoSQL Databases: MongoDB, Cassandra DB, Scylla DB, Redis, Aerospike, Neo4J',
-      'Vector Databases: Weaviate, ChromaDB',
-      'ETL Tools: Apache Airflow/Google Cloud Composer, Pentaho Data Integration, Informatica, ODI',
-      'BI Tools: Apache Superset, Tableau, Google Data Studio',
-      'Real Time Data Processing: Apache Storm, Apache Kafka, Apache Spark'
-    ],
-    'DevOps': [
-      'DevOps: Docker, Kubernetes, JenkinsCI, TravisCI, TeamCityCI, Terraform, Ansible, EFK, Prometheus, Grafana',
-      'Software Testing: JMeter, NightwatchJS, Lambda Test, TestMo'
-    ],
-    'Game': [
-      'Game Development: C++ - Unreal Engine, Raylib, Rust - Brackettlib',
-      'Robotics: C++ - ROS2, Gazebo, CoppeliaSim',
-      'C, Modern C++, Rust, 6502 Assembly Programming'
-    ]
-  }
-
-  // Assign skills to categories
-  allSkills.forEach((skill: string) => {
-    for (const [categoryKey, keywords] of Object.entries(skillMappings)) {
-      if (keywords.some(kw => skill.toLowerCase().includes(kw.toLowerCase()))) {
-        categories[categoryKey].skills.push(skill)
-        return
-      }
-    }
-  })
-
-  return Object.values(categories).filter(cat => cat.skills.length > 0)
-})
 
 useSEO({
   title: 'Home',
@@ -557,33 +467,10 @@ useSEO({
   border: 1px solid rgba(32, 178, 170, 0.06);
 }
 
-/* Skills */
+/* Skills - Simple Grid */
 .skills-container {
   padding: 2rem 2.2rem;
   margin-bottom: 2.5rem;
-}
-
-.skills-category {
-  margin-bottom: 1.8rem;
-}
-
-.skills-category:last-child {
-  margin-bottom: 0;
-}
-
-.skills-category-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #0d2b3e;
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.skills-category-title i {
-  color: #20b2aa;
-  font-size: 1.1rem;
 }
 
 .skills-grid {

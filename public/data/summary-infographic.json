@@ -11,7 +11,7 @@
   ],
   "expertise": [
     { "icon": "🏗️", "name": "System Architecture", "description": "Microservices, Modular Monoliths, Serverless, Event-driven" },
-    { "icon": "🧠", "name": "AI / Machine Learning", "description": "AI, Generative AI, RAG, Multi-Agent Systems, PyTorch" },
+    { "icon": "🧠", "name": "AI / Machine Learning", "description": "AI, Generative AI, RAG, Multi-Agent Systems, PyTorch, Weaviate, LangGraph" },
     { "icon": "⚛️", "name": "Quantum Computing / QML", "description": "Quantum Computing, Quantum ML, Qiskit, Pennylane" },
     { "icon": "☁️", "name": "Cloud & DevOps", "description": "AWS, GCP, Docker, Kubernetes" },
     { "icon": "🎮", "name": "Game Dev & Robotics", "description": "Unreal Engine, C++, Rust, ROS2, Gazebo, CoppeliaSim" }

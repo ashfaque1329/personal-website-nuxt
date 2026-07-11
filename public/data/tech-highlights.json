@@ -6,8 +6,8 @@
   },
   {
     "id": 2,
-    "title": "Nykaa GCC Platform",
-    "description": "Directed engineering for Nykaa's international e-commerce expansion into the GCC, leading platform delivery, cross-functional execution, and regional market launch."
+    "title": "Nykaa GCC Expansion",
+    "description": "Nykaa GCC Expansion - Directed engineering for Nykaa's international eCommerce platform and GCC market launch."
   },
   {
     "id": 3,
@@ -16,6 +16,11 @@
   },
   {
     "id": 4,
+    "title": "Evergreen Community - Recommender System",
+    "description": "Engineered a scalable hybrid recommender system for real-time cross-platform personalization, driving measurable gains in conversion and discovery."
+  },
+  {
+    "id": 5,
     "title": "Byju's eLearning Platform",
     "description": "Architected cloud-native learning platforms supporting 100,000+ concurrent users using microservices and event-driven architecture."
   }

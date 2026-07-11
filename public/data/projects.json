@@ -5,6 +5,21 @@
     "tech": ["Next.js", "Prisma", "Pinecone", "LangChain", "TypeScript"]
   },
   {
+    "name": "Hierarchical Probabilistic Demand Sensing and Forecasting with External Signal Fusion",
+    "description": "A hierarchical Bayesian forecasting system that fuses real-time internal signals (inventory velocity, search trends, cart abandonment) with external data (weather, events, macroeconomic indicators) to produce probabilistic demand predictions at SKU, store, and regional levels. It continuously adapts to market shifts, dynamically self-correcting to optimize inventory allocation, pricing, and promotions while minimizing stockouts and overstock costs.",
+    "tech": ["PyTorch", "Polars","Redpanda"]
+  },
+  {
+    "name": "Data-Scarce Regression with SMOGN and Joint Hyperparameter Optimization",
+    "description": "A hybrid framework combining SMOGN for synthetic data generation in sparse target regions with joint hyperparameter optimization (e.g., Optuna) that simultaneously tunes augmentation and model parameters. This integrated approach captures complex feature-target relationships more effectively than sequential tuning, improving predictive accuracy in data-limited settings. The framework is adaptable across domains like healthcare, finance, and sports analytics where rare but critical outcomes are underrepresented",
+    "tech": ["PyTorch", "Polars","Optuna","SHAP","LIME"]
+  },
+  {
+    "name": "What-If Analytics Engine using Causal AI ",
+    "description": "A causal AI engine that simulates hypothetical interventions (price changes, promotions, product launches) on business metrics using DAGs and double machine learning. It provides counterfactual estimates with confidence intervals—unlike correlation-based models—enabling teams to test strategies in silico before committing resources. Integrated with real-time data pipelines and BI dashboards for on-demand decision support.",
+    "tech": ["DoWhy", "EconML", "CausalNex", "gCastle", "LightGBM", "Polars", "PyMC"]
+  },
+  {
     "name": "Obstacle Assault (3D Game)",
     "description": "An immersive 3D obstacle course game developed using Unreal Engine 5 with C++23. Features realistic physics, dynamic obstacles, and progressive difficulty levels.",
     "tech": ["Unreal Engine 5", "C++23", "Blueprints"]

@@ -11,12 +11,12 @@
   },
   {
     "id": 3,
-    "title": "Seniority Social Platform",
+    "title": "Evergreen Community - Social Networking Platform",
     "description": "Architected an AI-powered social platform featuring personalized feeds, Computer Vision content moderation, GDPR-compliant privacy, and support for 30,000+ concurrent users."
   },
   {
     "id": 4,
-    "title": "Byju's Learning Platform",
+    "title": "Byju's eLearning Platform",
     "description": "Architected cloud-native learning platforms supporting 100,000+ concurrent users using microservices and event-driven architecture."
   }
 ]

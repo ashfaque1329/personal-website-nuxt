@@ -93,6 +93,22 @@
       </div>
     </section>
 
+    <!-- ===== TECHNOLOGY HIGHLIGHTS ===== -->
+    <section>
+      <h2 class="section-title"><i class="fas fa-rocket"></i> Technology Highlights</h2>
+      <div class="glass tech-highlights-container">
+        <div v-for="tech in store.techHighlightsData" :key="tech.id" class="tech-item">
+          <div class="tech-icon">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="tech-content">
+            <h4>{{ tech.title }}</h4>
+            <p>{{ tech.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Skills - Simple Display from JSON -->
     <section>
       <h2 class="section-title"><i class="fas fa-code"></i> Skills & Technologies</h2>
@@ -465,6 +481,44 @@ useSEO({
   padding: 0.15rem 0.6rem;
   border-radius: 10px;
   border: 1px solid rgba(32, 178, 170, 0.06);
+}
+
+/* ===== TECHNOLOGY HIGHLIGHTS ===== */
+.tech-highlights-container {
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.tech-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(32, 178, 170, 0.06);
+}
+
+.tech-item:last-child {
+  border-bottom: 0;
+}
+
+.tech-icon {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  color: #20b2aa;
+  font-size: 0.9rem;
+}
+
+.tech-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d2b3e;
+  margin-bottom: 0.2rem;
+}
+
+.tech-content p {
+  font-size: 0.9rem;
+  color: #1a3a4a;
+  line-height: 1.6;
 }
 
 /* Skills - Simple Grid */

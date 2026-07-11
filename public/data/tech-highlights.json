@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "LoveLocal AI Commerce Platform",
+    "description": "Led AI transformation including a Smart Shopping Assistant (ASR, OCR, TTS), AI-powered product discovery, recommendation engine, and multi-agent workflows that improved search performance by 40%."
+  },
+  {
+    "id": 2,
+    "title": "Nykaa GCC Platform",
+    "description": "Directed engineering for Nykaa's international e-commerce expansion into the GCC, leading platform delivery, cross-functional execution, and regional market launch."
+  },
+  {
+    "id": 3,
+    "title": "Seniority Social Platform",
+    "description": "Architected an AI-powered social platform featuring personalized feeds, Computer Vision content moderation, GDPR-compliant privacy, and support for 30,000+ concurrent users."
+  },
+  {
+    "id": 4,
+    "title": "Byju's Learning Platform",
+    "description": "Architected cloud-native learning platforms supporting 100,000+ concurrent users using microservices and event-driven architecture."
+  }
+]

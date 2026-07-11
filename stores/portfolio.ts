@@ -3,7 +3,9 @@ import { defineStore } from 'pinia'
 export const usePortfolioStore = defineStore('portfolio', {
     state: () => ({
         profile: null as any,
-        summaryInfographic: null as any,  // ✅ Keep this
+        summary: null as any,
+        summaryInfographic: null as any,
+        techHighlights: [] as any[],
         skills: [] as any[],
         experience: [] as any[],
         education: [] as any[],
@@ -15,7 +17,6 @@ export const usePortfolioStore = defineStore('portfolio', {
         hobbies: [] as any[],
         loading: false,
         error: null as string | null
-        // ❌ summary: null as any,  ← REMOVED
     }),
 
     getters: {
@@ -26,9 +27,9 @@ export const usePortfolioStore = defineStore('portfolio', {
         linkedin: (state) => state.profile?.linkedin || '',
         github: (state) => state.profile?.github || '',
         languages: (state) => state.profile?.languages || {},
-        // ❌ summaryText: (state) => state.summary?.text || '',  ← REMOVED
-
+        summaryText: (state) => state.summary?.text || '',
         summaryInfographicData: (state) => state.summaryInfographic || {},
+
         allSkills: (state) => state.skills,
         allExperience: (state) => state.experience,
         allEducation: (state) => state.education,
@@ -38,6 +39,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         allHobbies: (state) => state.hobbies,
         allSpecializations: (state) => state.specializations,
         thesisData: (state) => state.thesis,
+        techHighlightsData: (state) => state.techHighlights,
 
         // Identity getters
         identityTitle: (state) => state.summaryInfographic?.identity?.title || 'CTO / AI Researcher',
@@ -67,12 +69,14 @@ export const usePortfolioStore = defineStore('portfolio', {
             try {
                 const base = '/data'
                 const [
-                    profile, summaryInfographic, skills, experience, education,
+                    profile, summary, summaryInfographic, techHighlights, skills, experience, education,
                     thesis, specializations, certifications, projects,
                     achievements, hobbies
                 ] = await Promise.all([
                     fetch(`${base}/profile.json`).then(r => r.json()),
-                    fetch(`${base}/summary-infographic.json`).then(r => r.json()),  // ✅ New file
+                    fetch(`${base}/summary.json`).then(r => r.json()),
+                    fetch(`${base}/summary-infographic.json`).then(r => r.json()),
+                    fetch(`${base}/tech-highlights.json`).then(r => r.json()),
                     fetch(`${base}/skills.json`).then(r => r.json()),
                     fetch(`${base}/experience.json`).then(r => r.json()),
                     fetch(`${base}/education.json`).then(r => r.json()),
@@ -85,8 +89,9 @@ export const usePortfolioStore = defineStore('portfolio', {
                 ])
 
                 this.profile = profile
+                this.summary = summary
                 this.summaryInfographic = summaryInfographic
-                // ❌ this.summary = summary  ← REMOVED
+                this.techHighlights = techHighlights
                 this.skills = skills
                 this.experience = experience
                 this.education = education

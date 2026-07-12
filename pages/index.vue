@@ -94,7 +94,7 @@
     </section>
 
     <!-- ===== THESIS SECTION ===== -->
-    <section>
+    <section v-if="store.thesisData && store.thesisData.title">
       <h2 class="section-title"><i class="fas fa-quantum"></i> MSc Thesis</h2>
       <div class="glass thesis-container">
         <h3 class="thesis-title">{{ store.thesisData.title }}</h3>
@@ -103,9 +103,6 @@
           <span class="tech-tag" v-for="tech in store.thesisData.technologies" :key="tech">
             {{ tech }}
           </span>
-        </div>
-        <div class="thesis-status">
-          <span class="badge"><i class="fas fa-clock"></i> {{ store.thesisData.status }}</span>
         </div>
       </div>
     </section>
@@ -146,6 +143,9 @@ import { useSEO } from '~/composables/useSEO'
 
 const store = usePortfolioStore()
 await store.fetchAllData()
+
+// Debug: Check if thesis data is loaded
+console.log('Thesis Data:', store.thesisData)
 
 useSEO({
   title: 'Home',
@@ -511,6 +511,7 @@ useSEO({
   font-weight: 700;
   color: #0d2b3e;
   margin-bottom: 0.8rem;
+  line-height: 1.4;
 }
 
 .thesis-description {
@@ -524,12 +525,6 @@ useSEO({
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.thesis-status {
-  display: flex;
-  align-items: center;
 }
 
 /* ===== TECHNOLOGY HIGHLIGHTS ===== */

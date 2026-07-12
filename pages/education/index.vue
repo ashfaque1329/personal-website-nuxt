@@ -15,7 +15,7 @@
 
     <!-- Thesis Section -->
     <div class="glass thesis-card-full" v-if="store.thesisData">
-      <h2><i class="fas fa-quantum"></i> MSc Thesis</h2>
+      <h2><i class="fas fa-quantum"></i> Master of Science in AI - Thesis</h2>
       <h3>{{ store.thesisData.title }}</h3>
       <p>{{ store.thesisData.description }}</p>
       <div class="thesis-tech">

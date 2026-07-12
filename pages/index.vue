@@ -95,7 +95,7 @@
 
     <!-- ===== THESIS SECTION ===== -->
     <section v-if="store.thesisData && store.thesisData.title">
-      <h2 class="section-title"><i class="fas fa-quantum"></i> MSc Thesis</h2>
+      <h2 class="section-title"><i class="fas fa-quantum"></i> Master of Science in AI - Thesis</h2>
       <div class="glass thesis-container">
         <h3 class="thesis-title">{{ store.thesisData.title }}</h3>
         <p class="thesis-description">{{ store.thesisData.description }}</p>

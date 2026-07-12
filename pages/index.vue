@@ -93,6 +93,23 @@
       </div>
     </section>
 
+    <!-- ===== THESIS SECTION ===== -->
+    <section>
+      <h2 class="section-title"><i class="fas fa-quantum"></i> MSc Thesis</h2>
+      <div class="glass thesis-container">
+        <h3 class="thesis-title">{{ store.thesisData.title }}</h3>
+        <p class="thesis-description">{{ store.thesisData.description }}</p>
+        <div class="thesis-tech-tags">
+          <span class="tech-tag" v-for="tech in store.thesisData.technologies" :key="tech">
+            {{ tech }}
+          </span>
+        </div>
+        <div class="thesis-status">
+          <span class="badge"><i class="fas fa-clock"></i> {{ store.thesisData.status }}</span>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== TECHNOLOGY HIGHLIGHTS ===== -->
     <section>
       <h2 class="section-title"><i class="fas fa-rocket"></i> Technology Highlights</h2>
@@ -481,6 +498,38 @@ useSEO({
   padding: 0.15rem 0.6rem;
   border-radius: 10px;
   border: 1px solid rgba(32, 178, 170, 0.06);
+}
+
+/* ===== THESIS SECTION ===== */
+.thesis-container {
+  padding: 1.8rem 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.thesis-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d2b3e;
+  margin-bottom: 0.8rem;
+}
+
+.thesis-description {
+  font-size: 0.95rem;
+  color: #1a3a4a;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.thesis-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.thesis-status {
+  display: flex;
+  align-items: center;
 }
 
 /* ===== TECHNOLOGY HIGHLIGHTS ===== */

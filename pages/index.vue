@@ -106,10 +106,8 @@
         </div>
       </div>
     </section>
-
-    <!-- ===== TECHNOLOGY HIGHLIGHTS ===== -->
     <section>
-      <h2 class="section-title"><i class="fas fa-rocket"></i> Technology Highlights</h2>
+      <h2 class="section-title"><i class="fas fa-rocket"></i>Key Leadership Achievements</h2>
       <div class="glass tech-highlights-container">
         <div v-for="tech in store.techHighlightsData" :key="tech.id" class="tech-item">
           <div class="tech-icon">

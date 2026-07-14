@@ -1,9 +1,9 @@
 <template>
   <div class="page-container">
     <h1 class="page-title">
-      <i class="fas fa-microscope"></i> Specializations & Nanodegrees
+      <i class="fas fa-microscope"></i> Nanodegrees & Specializations
     </h1>
-    <p class="page-subtitle">Advanced certifications and specialized programs</p>
+    <p class="page-subtitle">Specialized programs</p>
 
     <div class="glass spec-list">
       <div v-for="spec in store.allSpecializations" :key="spec.name" class="spec-item">

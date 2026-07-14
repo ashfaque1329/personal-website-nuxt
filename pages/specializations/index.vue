@@ -28,7 +28,7 @@ const store = usePortfolioStore()
 await store.fetchAllData()
 
 useSEO({
-  title: 'Specializations & Nanodegrees',
+  title: 'Nanodegrees & Specializations',
   description: 'Advanced specializations and nanodegrees in Quantum Computing, ML, and Software Engineering.',
   url: '/specializations'
 })

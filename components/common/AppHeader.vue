@@ -24,7 +24,7 @@
               <i class="fas fa-graduation-cap"></i> Education
             </NuxtLink>
             <NuxtLink to="/specializations" class="dropdown-link">
-              <i class="fas fa-microscope"></i> Specializations
+              <i class="fas fa-microscope"></i> Nanodegrees & Specializations
             </NuxtLink>
             <NuxtLink to="/achievements" class="dropdown-link">
               <i class="fas fa-trophy"></i> Achievements

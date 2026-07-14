@@ -29,7 +29,7 @@ await store.fetchAllData()
 
 useSEO({
   title: 'Nanodegrees & Specializations',
-  description: 'Advanced specializations and nanodegrees in Quantum Computing, ML, and Software Engineering.',
+  description: 'Advanced nanodegrees and specializations in Quantum Computing, ML, and Software Engineering.',
   url: '/specializations'
 })
 </script>
